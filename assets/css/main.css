@@ -1,0 +1,423 @@
+body {
+	margin: 0 auto;
+	padding: 0;	
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}	
+
+.flex-container {
+	display : flex;
+}
+
+/* Nav - Header */
+
+#navegador {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	padding-top: 24px;
+	padding-bottom: 8px;
+	z-index: 1000;
+	padding-right: 40px;
+    left:  0px;	
+    right: 0px;
+}
+
+#navegador.flex-container {
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 40px;
+}
+
+.logo {
+	width: 60px;
+	margin-right: auto;
+	padding-left: 80px;
+	overflow: hidden;
+}
+
+.hide {
+	display: none;
+}
+
+.estilo-a {
+	display: inline-block;
+	padding: 20px 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	margin-left: 10px;
+}
+
+.estilo-a.nav-especial {
+	padding: 10px 20px;
+	border: 1px solid white;
+	border-radius: 10%;
+}
+
+.nav-hide {
+	visibility: hidden;
+}
+
+#navegador  a:hover {
+	color: #ff00bf;
+}
+
+/* Sign Up (Registro) */
+
+#video-header {
+	height: auto;
+}
+
+#video-background {
+	padding: 0;
+    height: 140%;
+    width: 100%;
+    z-index: -100;
+    position: relative;
+    top: 0;
+}
+
+#mascara {
+	width: 100%;
+	height: 240px;
+    background: linear-gradient(rgba(126,0,126,0),rgb(125,0,125));
+    position: absolute;
+    top: 520px;
+}
+
+#video-header.flex-container {
+	flex-direction: row-reverse;
+}
+
+.sign-up {
+	background-color: white;
+	width: 400px;
+	height: 300px;
+    position: absolute;
+    margin: 0;
+    top: 130px;
+    padding: 60px 65px;
+	justify-content: flex-end;
+}
+
+.sign-up-click {
+	background-color: white;
+	width: 400px;
+	height: 450px;
+    position: absolute;
+    margin: 0;
+    top: 130px;
+    padding: 60px 65px;
+	justify-content: flex-end;
+}
+
+.titulo-sign-up h1 {
+	font-size: 50px;
+	color: #241471;
+	font-weight: 700;
+	line-height: 0.9;
+	position: relative;
+	bottom: 50px;
+}
+
+.titulo-sign-up p {
+	font-size: 15px;
+	color: #241471;
+	font-weight: 300;
+	position: relative;
+	bottom: 80px;
+}
+
+.formulario {
+	width: 350px;
+	height: 20px;
+	margin: 0 0 30px 0;
+    background: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    border-bottom: 0.5px solid #241471;
+    position: relative;
+	bottom: 60px;
+}
+
+.formulario:focus {
+	outline: 0;
+    box-shadow: none;
+   	border-bottom: 2px solid #7F7F7F;
+   	opacity: 0.5;	
+}
+
+ [placeholder="Phone Number"],
+ [placeholder="Name"],
+ [placeholder="Email"],
+ [placeholder="City"] {
+	opacity: 0.5;
+	font-size: 1.2em;
+}
+
+.btn-sign-up {
+	margin: 10px 0;
+}
+
+.btn-drive {
+	color: white;
+	padding: 15px;
+	background-color: #FC00B5;
+	text-decoration: none;
+	font-size: 1.1em;
+	border-radius: 10px;
+	font-weight: 300;
+	position: relative;
+	bottom: 50px;	
+}
+
+.btn-ride {
+	margin: 0 20px;
+	position: relative;
+	bottom: 50px;	
+	font-weight: 300;
+	color: #7F7F7F;
+}
+
+.text-sign-up {
+	font-size: 0.65em;
+	font-weight: 300;
+	color: #7F7F7F;
+	position: relative;
+	bottom: 30px;
+}
+
+.text-sign-up a {
+	color: #FC00B5;
+	text-decoration: none;
+}
+
+/* Ride */
+
+#ride {
+	width: auto;
+	height: 500px;
+	background: linear-gradient(rgb(127,0,127),#2b1e66);
+	padding: 0 40px 0 100px;
+}
+
+#ride.flex-container {
+	flex-direction: row;	
+}
+
+.text-ride {
+	color: white;
+	font-size: 1.15em;
+}
+
+.text-ride p {
+	font-weight: 300;	
+	position: relative;
+	bottom: 20px;
+}
+
+.in-minute, .about-safety, .happy-drivers {
+	padding: 0 0 10px 30px;
+}
+
+.img-ride {
+	width: 550px;
+	height: 700px;
+	overflow: hidden;	
+	position: relative;
+	left: 80px;
+}
+
+.img-ride img {
+	width: 480px;
+}
+
+/* Watch */
+
+#watch.flex-container {
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0 0 0 20px;
+	height: 480px;	
+}
+
+.amplifly-ride {
+	width: 400px;
+	background-color: white;
+	padding: 100px 40px;
+	position: relative;
+	box-sizing: inherit;
+	font-size: 1.15em;
+}
+
+/* Watch June */
+
+#watch-june.flex-container {
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0;
+	height: 480px;	
+}
+
+.june {
+	width: 400px;
+	background-color: white;
+	padding: 100px 40px;
+	position: relative;
+	box-sizing: inherit;
+	font-size: 1.15em;
+}
+
+/* Round Up */
+
+#round-up.flex-container {
+	flex-direction: row;
+	justify-content: center;
+}	
+
+.learn-more {
+	width: 400px;
+	background-color: white;
+	padding: 100px 40px;
+	position: relative;
+	box-sizing: inherit;
+	font-size: 1.15em;
+}
+
+.learn-more a {
+	text-decoration: none;
+	color: #FC00B5;
+}
+
+#video-round-up {
+	width: 853px;
+	height: 480px;	
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  width: auto;
+  height: 600px;
+  background-color: #333447;
+  color: white;
+  padding: 40px 20px;
+}
+
+#pre-footer.flex-container {
+	flex-direction: row;
+	justify-content: space-around;
+	justify-content: flex-start;	
+}
+
+div.flex-container {
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	padding: 0 20px 10px 40px;
+}
+
+.link-principal {
+	color: #F0F0F2;
+	font-weight: 700;
+	padding-bottom: 20px;
+	text-decoration: none;
+}
+
+.link-principal:hover {
+	text-decoration: underline;
+	text-decoration-color: #FC00B5;
+}
+
+.osc {
+	font-weight: 700;
+	padding-bottom: 20px;
+	text-decoration: none;
+	color: #B1BAD1;
+	margin: 0;
+}
+
+.link-secundario {
+	color: #E9F0F2;
+	font-weight: 300;
+	padding-bottom: 20px;	
+	text-decoration: none;	
+}
+
+.link-secundario:hover, .derechos a:hover{
+	color: #FC00B5;
+	text-decoration: none;
+	text-decoration-color: #FC00B5;
+}
+
+.link-logos-footer {
+	width: 15%;
+	align-items: right;
+	overflow: hidden;
+	margin-left: auto;
+	justify-content: right;	
+}
+
+.link-logos-footer a {
+	margin-bottom: 20px;
+}
+
+.link-logos-footer img {
+	width: 150px;
+}
+
+#footer-redes.flex-container {
+	flex-direction: column;
+	align-items: center;
+	margin: 70px 0 30px 0;
+
+}
+
+div.footer.flex-container {
+	flex-direction: row;	
+	justify-content: center;
+}
+
+.rrss div {
+	margin: 0 20px;
+}
+
+.circulo {
+	border: 1px solid white;
+	border-radius: 50px;
+	width: 25px;
+	height: 25px;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+
+.fa-facebook {
+	position: relative;
+	left: 3px;
+}
+
+.circulo .fa {
+	color: white;
+}
+
+.rrss {
+	padding-bottom: 10px 40px;
+}
+
+.linea {
+	width: 600px;
+}
+
+.derechos, .derechos a {
+	font-weight: 300;
+	font-size: 0.95em;
+	color: white;
+	text-decoration: none;
+}
+
+
